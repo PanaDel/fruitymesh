@@ -1,6 +1,0 @@
-name: fruitymesh
-title: Fruitymesh
-version: master
-start_page: ROOT:Quick-Start.adoc
-nav:
-  - modules/ROOT/nav.adoc

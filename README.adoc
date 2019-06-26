@@ -1,1 +1,0 @@
-link:./docs/modules/ROOT/pages/README.adoc[README.adoc]
