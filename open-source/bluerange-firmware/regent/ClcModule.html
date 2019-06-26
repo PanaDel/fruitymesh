@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClcModule :: Fruitymesh</title>
+    <link rel="canonical" href="https://www.bluerange.io/docs/opensource/bluerange-firmware/regent/ClcModule.html">
+    <meta name="generator" content="Antora 2.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.bluerange.io/docs/opensource">Fruitymesh</a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="link navbar-item" id="header-github-logo">
+        <a class="link navbar-item" href="https://github.com/mwaylabs/fruitymesh" target="_blank"></a>
+      </div>
+      <div class="navbar-item">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="bluerange-firmware" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title">
+      <a href="../index.html">bluerange-firmware</a>
+    </h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Quick-Start.html">Quick Start</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Features.html">Features</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Developers.html">Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Specification.html">Specification</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../Modules.html">Modules</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../AdvertisingModule.html">AdvertisingModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DebugModule.html">DebugModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DfuModule.html">DfuModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../EnrollmentModule.html">EnrollmentModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IoModule.html">IoModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../MeshAccessModule.html">MeshAccessModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Node.html">Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ScanningModule.html">ScanningModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../StatusReporterModule.html">StatusReporterModule</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other Classes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Logger.html">Logger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RecordStorage.html">RecordStorage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Class-Structure.html">Class Structure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Debugging.html">Debugging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Battery-Consumption.html">Battery Consumption</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RecordStorage.html">RecordStorage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../The-FruityMesh-Algorithm.html">The FruityMesh Algorithm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../The-Algorithm-in-Detail.html">In Detail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Simulator.html">Simulator</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../Tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Implementing-a-Custom-Module.html">Implementing a Custom Module</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../FAQ.html">FAQ</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">bluerange-firmware</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">bluerange-firmware</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">bluerange-firmware</a></li>
+    <li class="crumb"><a href="ClcModule.html">ClcModule</a></li>
+  </ul>
+</nav>
+</div>
+<article class="doc">
+<h1>ClcModule</h1>
+<div class="sect1">
+<h2 id="_general"><a class="anchor" href="#_general"></a>General</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The ClcModule contains the whole customer specific logic for regent. It works in conjunction with the ClcComm class that provides low level communication between FruityMesh and the regent controller.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_component_sense_component_act_mapping"><a class="anchor" href="#_component_sense_component_act_mapping"></a>Component_sense &amp; Component_act Mapping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The component_sense and component_act messages are mapped to vendor specific data:</p>
+</div>
+<div class="sect2">
+<h3 id="_component_sense_mapping"><a class="anchor" href="#_component_sense_mapping"></a>component_sense mapping</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Generic data</th>
+<th class="tableblock halign-left valign-top">Vendor Specific data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nodeId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dest. (Destination Node)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">moduleId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CLC_MODULE_ID (150)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">requestHandle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cnt (Counter)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">actionType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CMD (UNSPECIFIED &#8658; Not Mapped, ERROR_RSP &#8658; C0, READ_RSP &#8658; C1, WRITE_RSP &#8658; C2)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">component</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">modbus Adr. (Modbus Device Address)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">registerAddress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HR Adr. (Holding Register Address)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">payload</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The CR, length, Nr. HR, LF are automatically set or calculated from the data, the Source is automatically set using the nodeId of the sending device.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_component_act_mapping"><a class="anchor" href="#_component_act_mapping"></a>component_act mapping</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Generic data</th>
+<th class="tableblock halign-left valign-top">Vendor Specific data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nodeId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dest. (Destination Node)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">moduleId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CLC_MODULE_ID (150)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">requestHandle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cnt (Counter)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">actionType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CMD (WRITE &#8658; D0, READ &#8658; D1, WRITE_ACK &#8658; D2)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">component</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">modbus Adr. (Modbus Device Address)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">registerAddress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HR Adr. (Holding Register Address)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">payload</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Either Data, or in case of READ mapped to Nr. HR</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The CR, length, LF are automatically set or calculated from the data, the Source is automatically set using the nodeId of the sending device.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example for Reading a Holding register</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Javascript hljs" data-lang="Javascript">TOPIC: rltn-iot/CEC820B9-F357-427B-801C-87335412E762/819E6137-5364-4695-A26A-9D6BABC78B7A/6AA262AE-B450-42BD-BE56-03BCC482F454/rwio/clc/21-4112/read
+
+{
+	"module":"CLC_MODULE",
+	"component":21,
+	"register":4112,
+	"length":2,
+	"requestHandle":5,
+	"timestamp":1559062507165
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>Build with Antora</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script>antoraLunr.init("../../_/../search_index.json")</script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+
+  </body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CherrySim :: Fruitymesh</title>
+    <link rel="canonical" href="https://www.bluerange.io/docs/opensource/bluerange-firmware/internal/CherrySim.html">
+    <meta name="generator" content="Antora 2.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.bluerange.io/docs/opensource">Fruitymesh</a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="link navbar-item" id="header-github-logo">
+        <a class="link navbar-item" href="https://github.com/mwaylabs/fruitymesh" target="_blank"></a>
+      </div>
+      <div class="navbar-item">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="bluerange-firmware" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title">
+      <a href="../index.html">bluerange-firmware</a>
+    </h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Quick-Start.html">Quick Start</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Features.html">Features</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Developers.html">Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Specification.html">Specification</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../Modules.html">Modules</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../AdvertisingModule.html">AdvertisingModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DebugModule.html">DebugModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DfuModule.html">DfuModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../EnrollmentModule.html">EnrollmentModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IoModule.html">IoModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../MeshAccessModule.html">MeshAccessModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Node.html">Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ScanningModule.html">ScanningModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../StatusReporterModule.html">StatusReporterModule</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other Classes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Logger.html">Logger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RecordStorage.html">RecordStorage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Class-Structure.html">Class Structure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Debugging.html">Debugging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Battery-Consumption.html">Battery Consumption</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RecordStorage.html">RecordStorage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../The-FruityMesh-Algorithm.html">The FruityMesh Algorithm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../The-Algorithm-in-Detail.html">In Detail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Simulator.html">Simulator</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../Tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Implementing-a-Custom-Module.html">Implementing a Custom Module</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../FAQ.html">FAQ</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">bluerange-firmware</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">bluerange-firmware</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">bluerange-firmware</a></li>
+    <li class="crumb"><a href="CherrySim.html">CherrySim</a></li>
+  </ul>
+</nav>
+</div>
+<article class="doc">
+<h1>CherrySim</h1>
+<div class="sect1">
+<h2 id="_general"><a class="anchor" href="#_general"></a>General</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CherrySim uses the codebase of FruityMesh and provides a softdevice abstraction layer that simulates bluetooth connections, advertising, flash access and much more. It basically gives us the possibility to debug, develop and simulate multiple FruityMesh nodes on a development PC.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functionality"><a class="anchor" href="#_functionality"></a>Functionality</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Simulates nodes in a timestep based simulation</p>
+</li>
+<li>
+<p>Allows easy debugging of mesh-behaviour</p>
+</li>
+<li>
+<p>Includes CherrySimRunner for manual testing and simulation and CherrySimTester for automatic mesh tests using the google test framework</p>
+</li>
+<li>
+<p>Deterministic meshing using a pseude random number generator</p>
+</li>
+<li>
+<p>Mesh state visualization on <a href="http://localhost:5555/" class="bare">http://localhost:5555/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_it_works"><a class="anchor" href="#_how_it_works"></a>How it works</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CherrySim uses a header file SystemTest.h that is force-included before all other header files to be able to abstract the softdevice. All SoftDevice calls are implemented in a way to closely mock the funcationality of a real SoftDevice. For everything that uses the radio, such as advertising or connections, a simplified simulation is used that calculates the distances between nodes and simulates packet loss.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_visualization"><a class="anchor" href="#_visualization"></a>Visualization</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Open <a href="http://localhost:5555/" class="bare">http://localhost:5555/</a> in a webbrowser while the simulator is running and simulating.</p>
+</div>
+<div class="paragraph">
+<p>The Webserver serves the FruityMap for visualization and has some endpoints that serve dynamic jsons that reflect the current mesh state. Be aware that the visualization shows the GAP connections and not the MeshConnections. This is an important difference. If all MeshConnections are handshaked, in a stable state and if there are no implementation errors, these visualizations match.</p>
+</div>
+<div class="paragraph">
+<p>The connections are presented using arrows which originate from the central and point to the peripheral. The black dots represent the connection master bits. <strong>RSSI / globalConnectionId</strong> is shown for each connection while the nodes show "nodeId / clusterSize".</p>
+</div>
+<div class="paragraph">
+<p>The leds are also visualized but all LED changes are mapped to a single one.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_node_properties_in_simulator"><a class="anchor" href="#_node_properties_in_simulator"></a>Node Properties in Simulator</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The serial numbers are counting upwards, starting at BBBBB. Every forth byte of the node key, starting with the first byte is equal to the serial number index + 1. So for example, BBBBB has the node key 01:00:00:00:01:00:00:00:01:00:00:00:01:00:00:00, BBBBC has the node key 02:00:00:00:02:00:00:00:02:00:00:00:02:00:00:00 and so on.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_docker_environment"><a class="anchor" href="#_docker_environment"></a>Docker Environment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The simulator inside the docker environment has 10 nodes that take part in the mesh and additionally two assets.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_debugging"><a class="anchor" href="#_debugging"></a>Debugging</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_globally_available_variables"><a class="anchor" href="#_globally_available_variables"></a>Globally available variables</h3>
+<div class="paragraph">
+<p><strong>simGlobalStatePtr</strong> always references the GlobalState of the current node that is simulated. Only one node is simulated at a time and the GlobalState object contains the full state of a FruityMesh node.</p>
+</div>
+<div class="paragraph">
+<p><strong>cherrySimInstance</strong> points to the simulator and can be used to access all other information</p>
+</div>
+<div class="paragraph">
+<p><strong>cherrySimInstance&#8594;currentNode</strong> can be used to see the complete state of the current node including SoftDevice and FruityMesh state.</p>
+</div>
+<div class="paragraph">
+<p><strong>cherrySimInstance&#8594;currentNode&#8594;currentEvent</strong> will point to the event that is being processed. This can contain additional information under <em>additionalInfo</em> such as the globalPacketId for all write events.</p>
+</div>
+<div class="paragraph">
+<p><strong>cherrySimInstance&#8594;nodes</strong> provides access to all nodes in the simulation.</p>
+</div>
+<div class="paragraph">
+<p><strong>simFicrPtr</strong>, <strong>simUicrPtr</strong>, <strong>simGpioPtr</strong>, <strong>simFlashPtr</strong> point to the simulated hardware peripherals of the currently simulated node.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_debugging_with_conditional_breakpoints"><a class="anchor" href="#_debugging_with_conditional_breakpoints"></a>Debugging with conditional breakpoints</h3>
+<div class="paragraph">
+<p>It is very useful to use conditional breakpoints for debugging when analysing a certain situation. Because of the PSRNG, the same situation can be reproduced as often as desired and logs and more can added or modified (as long as the meshing behaviour is not changed). Conditional Breakpoints can be used for:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>globalEventIdCounter</strong>: A different id is given to each event so that breakpoints can be set for specific events.</p>
+</li>
+<li>
+<p><strong>globalConnHandleCounter</strong>: Each connection is given a globally unique id so they can be tracked easily (After a long simulation, these will wrap and a warning will be printed)</p>
+</li>
+<li>
+<p><strong>globalPacketIdCounter</strong>: Each packet is assigned a global id so that the creation of the packet can be debugged. This is usefuly as packet creation and processing of the packet happen asynchronously and are not directly linked. Check the additionalInfo of the currentEvent during debugging and break in the sd_ble_gattc_write when this is assigned.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you want to break in the debugger before some error happens, you can write:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-c++ hljs" data-lang="c++">static int counter = 0;
+counter++;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Then check the value of the counter in the debugger, set a conditional breakpoint some lines before your error happened and compare the counter value against the count from the previous run.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terminal_commands"><a class="anchor" href="#_terminal_commands"></a>Terminal Commands</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The simulator has a terminal that allows you to input all commands that can be used with FruityMesh nodes. Depending on the simulator configuration, either no terminal is enabled (-1), all terminals are active (0) or the terminal of a specific node is active, for example 1. The active terminals can be switched at runtime by using the term command, e.g.:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-c++ hljs" data-lang="c++">term 1</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The simulator provides a set of terminal commands as well that you can input via the terminal. The most important one</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-c++ hljs" data-lang="c++">simstat</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>will give you an overview of all available commands. Also, a number of <em>SIMSTATCOUNT</em> and <em>SIMSTATAVG</em> macros are spread throughout the code that are used to collect statistics. The results will also be shown by that command.</p>
+</div>
+<div class="paragraph">
+<p>Using commands such as <strong>nodes 20</strong>, <strong>width 40</strong>, <strong>height 50</strong> will let you modify the simulation scenario. You can also import scenarios as json files by first giving the paths and then enabling json import (<strong>json 1</strong>). Each simulation is always run deterministic with a preset seed. You can modify this seed using e.g. <strong>seed 123</strong> which will give you a new simulation.</p>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>Build with Antora</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script>antoraLunr.init("../../_/../search_index.json")</script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitymesh :: Fruitymesh</title>
+    <link rel="canonical" href="https://www.bluerange.io/docs/opensource/bluerange-firmware/internal/ARS105027_nrf52_mesh_beacon.html">
+    <meta name="generator" content="Antora 2.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.bluerange.io/docs/opensource">Fruitymesh</a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="link navbar-item" id="header-github-logo">
+        <a class="link navbar-item" href="https://github.com/mwaylabs/fruitymesh" target="_blank"></a>
+      </div>
+      <div class="navbar-item">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="bluerange-firmware" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title">
+      <a href="../index.html">bluerange-firmware</a>
+    </h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Quick-Start.html">Quick Start</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Features.html">Features</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Developers.html">Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Specification.html">Specification</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../Modules.html">Modules</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../AdvertisingModule.html">AdvertisingModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DebugModule.html">DebugModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DfuModule.html">DfuModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../EnrollmentModule.html">EnrollmentModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IoModule.html">IoModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../MeshAccessModule.html">MeshAccessModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Node.html">Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ScanningModule.html">ScanningModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../StatusReporterModule.html">StatusReporterModule</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other Classes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Logger.html">Logger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RecordStorage.html">RecordStorage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Class-Structure.html">Class Structure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Debugging.html">Debugging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Battery-Consumption.html">Battery Consumption</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RecordStorage.html">RecordStorage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../The-FruityMesh-Algorithm.html">The FruityMesh Algorithm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../The-Algorithm-in-Detail.html">In Detail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Simulator.html">Simulator</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../Tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Implementing-a-Custom-Module.html">Implementing a Custom Module</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../FAQ.html">FAQ</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">bluerange-firmware</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">bluerange-firmware</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+</nav>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="_3rd_generation_beacon"><a class="anchor" href="#_3rd_generation_beacon"></a>3rd Generation Beacon</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_meshbeacon_ars105027_boardid_16"><a class="anchor" href="#_meshbeacon_ars105027_boardid_16"></a>MeshBeacon ARS105027 (boardid 16)</h3>
+<div class="paragraph">
+<p>Mesh beacon ARS105027 comprises of several sensors and the Laird BL652-SA Module.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/img/ARS105027.png" alt="Beacon"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/img/ARS105027_back.png" alt="Beacon"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pin Assignment Boardid 16: LED Red(7), LED Green(6).</p>
+</li>
+<li>
+<p>Battery: 4x AA Battery (1000mAh to 3600mAh each).</p>
+</li>
+<li>
+<p>Sensors: accelerometer, gyroscope, magnetometer, temperature and optical.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_battery_measurement"><a class="anchor" href="#_battery_measurement"></a>Battery Measurement</h3>
+<div class="paragraph">
+<p>Battery measurement was carried out for some of the important modes of the beacon. The measurements can be found below in tabular form:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Mode</th>
+<th class="tableblock halign-left valign-top">Current Consumption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Idle Current</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">26 uA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advertising at 100ms</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">98 uA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-Moving Asset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">38 uA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moving Asset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">110 uA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Battery Measurement in StatusReporterModule</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.20 mA</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_provisional_battery_measurement_after_enabling_sensor_pin"><a class="anchor" href="#_provisional_battery_measurement_after_enabling_sensor_pin"></a>Provisional Battery Measurement After Enabling Sensor Pin</h3>
+<div class="paragraph">
+<p>Some provisional battery measurements were recorded after enabling the sensor pin.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Mode</th>
+<th class="tableblock halign-left valign-top">Current Consumption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-Moving Asset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">72 uA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moving Asset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">135 uA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enabling magnetometer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.90 mA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gyroscope on and not processing data in Normal Mode while not moving</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">880 uA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enabling gyrosocope</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.2  mA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gyroscope on and not processing data in Normal Mode while moving</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">940 uA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">===</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gyroscope on and in Suspend Mode while not moving</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">75 uA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gyroscope on and in Suspend Mode while moving</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">135 uA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gyroscope while processing data</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><code>Note: Magnetometer is not yet optimized for battery measurement and recorded just to have some reference value.</code></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>Build with Antora</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script>antoraLunr.init("../../_/../search_index.json")</script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+
+  </body>
+</html>

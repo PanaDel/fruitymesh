@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generating Source Code Distributions :: Fruitymesh</title>
+    <link rel="canonical" href="https://www.bluerange.io/docs/opensource/bluerange-firmware/internal/Generate-Distributions.html">
+    <meta name="generator" content="Antora 2.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.bluerange.io/docs/opensource">Fruitymesh</a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="link navbar-item" id="header-github-logo">
+        <a class="link navbar-item" href="https://github.com/mwaylabs/fruitymesh" target="_blank"></a>
+      </div>
+      <div class="navbar-item">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="bluerange-firmware" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title">
+      <a href="../index.html">bluerange-firmware</a>
+    </h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Quick-Start.html">Quick Start</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Features.html">Features</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Developers.html">Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Specification.html">Specification</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../Modules.html">Modules</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../AdvertisingModule.html">AdvertisingModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DebugModule.html">DebugModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DfuModule.html">DfuModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../EnrollmentModule.html">EnrollmentModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IoModule.html">IoModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../MeshAccessModule.html">MeshAccessModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Node.html">Node</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ScanningModule.html">ScanningModule</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../StatusReporterModule.html">StatusReporterModule</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other Classes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Logger.html">Logger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RecordStorage.html">RecordStorage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Other</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Class-Structure.html">Class Structure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Debugging.html">Debugging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Battery-Consumption.html">Battery Consumption</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RecordStorage.html">RecordStorage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../The-FruityMesh-Algorithm.html">The FruityMesh Algorithm</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../The-Algorithm-in-Detail.html">In Detail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Simulator.html">Simulator</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../Tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Implementing-a-Custom-Module.html">Implementing a Custom Module</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../FAQ.html">FAQ</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">bluerange-firmware</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">bluerange-firmware</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">bluerange-firmware</a></li>
+    <li class="crumb"><a href="Generate-Distributions.html">Generating Source Code Distributions</a></li>
+  </ul>
+</nav>
+</div>
+<article class="doc">
+<h1>Generating Source Code Distributions</h1>
+<div class="sect1">
+<h2 id="_general"><a class="anchor" href="#_general"></a>General</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A number of different distributions are supported. Each distribution only adds files and does not remove:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Github Distribution:</strong> Only open source code without any vendor code</p>
+</li>
+<li>
+<p><strong>Partner Distribution:</strong> Contains fruityloader and mway modules</p>
+</li>
+<li>
+<p><strong>Customer Distribution:</strong> Contains the customers specific source code as well</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Source code or documentation in the vendor folder is included in the partner distribution, but source code and documentation in the vendor/mway folder is for internal use only.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_distributing"><a class="anchor" href="#_distributing"></a>Distributing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>srcdist.bat</code> is used to generate all distributions, they will be generated in the parent directory of fruitymesh.</p>
+</div>
+<div class="paragraph">
+<p>Ideally, you should have a repository for each distribution next to the fruitymesh directory.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>fruitymesh_github</p>
+</li>
+<li>
+<p>fruitymesh_partner</p>
+</li>
+<li>
+<p>fruitymesh_waldmann</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Every time, you want to distribute a new version of the source code, do the following steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Make sure that you have checked out the master branch in the distribution directories (e.g. fruitymesh_github, &#8230;&#8203;) or maybe you distribute in a special branch depending on the customer.</p>
+</li>
+<li>
+<p>Execute the srcdist.bat script&#8201;&#8212;&#8201;The script will first clean the distribution directories but will omit the .git folder&#8201;&#8212;&#8201;It will then copy all appropriate files for the distribution</p>
+</li>
+<li>
+<p>Commit the changes to the repository and push</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_merging_changes"><a class="anchor" href="#_merging_changes"></a>Merging Changes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If there are changes made by the customer, you have to distribute him the latest master and get him to resolve all merge conflicts. Afterwards, pull his changes and copy them to your master branch and commit.</p>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>Build with Antora</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script>antoraLunr.init("../../_/../search_index.json")</script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+
+  </body>
+</html>
